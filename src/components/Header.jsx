@@ -29,7 +29,7 @@ function Header() {
                     </div>
                 </nav>
                 <nav className="flex gap-2.5">
-                    <div className="flex gap-10 self-start px-5 py-3.5 text-black bg-white rounded-3xl">
+                    <div className="flex gap-10 self-start px-5 py-3.5 text-black bg-white rounded-3xl justify-center items-center">
                         <div>Student</div>
                         <svg className="object-contain shrink-0 self-stretch my-auto w-6 aspect-square" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
