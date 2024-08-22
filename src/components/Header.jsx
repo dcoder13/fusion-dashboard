@@ -2,9 +2,9 @@ import React from 'react';
 
 function Header() {
     return (
-        <header className="sticky top-0  flex flex-col w-full text-xs font-medium text-white whitespace-nowrap min-h-[30%] max-md:max-w-full bg-gray-800 z-10">
+        <header className="sticky top-0  flex flex-col w-full text-xs font-medium text-white whitespace-nowrap min-h-[30%] max-md:max-w-full z-10 ">
             <img loading="lazy" src="./image.png" alt="" className="object-cover absolute inset-0 size-full" />
-            <div className="flex relative flex-wrap gap-5 justify-between items-start px-8 pt-2.5 pb-64 w-full max-md:px-5 max-md:pb-24 max-md:max-w-full">
+            <div className="flex relative flex-wrap gap-5 justify-between items-start px-8 pt-2.5 pb-64 w-full max-md:px-5 max-md:pb-24 max-md:max-w-full max-h-[10%] bg-gradient-to-b from-gray-900 to-transparent">
                 <nav className="flex gap-9">
                     <div className="flex gap-3 items-center">
                         <svg className="object-contain shrink-0 self-stretch my-auto w-6 aspect-square" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -29,12 +29,10 @@ function Header() {
                     </div>
                 </nav>
                 <nav className="flex gap-2.5">
-                    <div className="flex gap-10 self-start px-5 py-3.5 text-black bg-white rounded-3xl justify-center items-center">
-                        <div>Student</div>
-                        <svg className="object-contain shrink-0 self-stretch my-auto w-6 aspect-square" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </div>
+                    <select className="px-5 mx-2 py-2 text-black text-[0.75vw] bg-white rounded-xl border-x-8 gap-10">
+                        <option>Student</option>
+                        <option>Admin</option>
+                    </select>
                     <svg className="object-contain shrink-0 self-start w-px aspect-[0.03]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 1 24" stroke="currentColor">
                         <line x1="0.5" y1="0" x2="0.5" y2="24" strokeWidth="0.5" />
                     </svg>

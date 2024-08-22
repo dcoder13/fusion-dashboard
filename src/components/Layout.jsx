@@ -7,8 +7,8 @@ import MainContent from './MainContent';
 function Layout() {
     return (
         <div className="flex flex-col h-screen overflow-hidden bg-white relative">
-            <Header className="-z-50"/>
-            <div className="flex flex-col items-center w-full px-4 pt-2 text-xs text-center bg-stone-50 shadow-md max-md:px-2 ">
+            <Header />
+            <div className="flex flex-col items-center w-full px-4 pt-2 text-xs text-center bg-stone-50 shadow-md max-md:px-2 z-10">
                 <nav className="flex gap-10 w-full max-w-[399px]">
                     <div className="flex flex-col items-center flex-1 text-indigo-600">
                         <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/913fc6572acd11cc37741514d6f3c13b0464950163b9a7a6084346d66351052c?placeholderIfAbsent=true&apiKey=f71064b691a54b588fcdc7721dde43a4" alt="" className="object-contain w-6 aspect-square" />
@@ -21,14 +21,15 @@ function Layout() {
                     </div>
                 </nav>
             </div>
-            <div className="flex flex-1  z-50 relative">
-                <div className="md:sticky h-screen  w-[33%] flex justify-center z-10">
+            <div className="flex flex-1 relative z-10 ">
+                <div className="absolute top-0 w-[30%] flex justify-center ">
                     <Sidebar />
                 </div>
-                <main className="flex-1 overflow-y-auto w-[33%] z-50"> 
+                <div className='w-[30%]'></div>
+                <div className="flex-1  z-20 overflow-y-auto h-[100%]">
                     <MainContent />
-                </main>
-                <div className="md:sticky h-screen overflow-y-auto w-[33%] flex justify-center">
+                </div>
+                <div className="sticky top-0 h-screen w-[30%] flex justify-center">
                     <ModuleSidebar />
                 </div>
             </div>

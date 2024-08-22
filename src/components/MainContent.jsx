@@ -42,7 +42,8 @@ function MainContent() {
         setNotifications(updatedNotifications);
     }
     return (
-        <section className="flex flex-col w-full px-5 max-md:px-0 max-md:w-full mt-5 md:mt-10">
+        
+        <section className="flex flex-col w-full px-5 max-md:px-0 max-md:w-full mt-5 md:mt-10 sticky overflow-y-auto h-[40%] ">
             <div className="flex flex-col w-full mt-5 max-md:mt-10">
                 {notifications.map((notification) => (
                     <NotificationCard key={notification.id} deleteNotification={() => deleteNotification(notification.id)} {...notification} />

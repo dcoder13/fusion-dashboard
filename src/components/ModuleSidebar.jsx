@@ -50,17 +50,17 @@ function ModulesSidebar() {
     ];
 
     return (
-        <aside className="flex flex-col h-[80%] max-md:w-full top-0 z-50 sticky overflow-hidden mt-10 ">
-            <div className="flex flex-col px-10 py-6 mx-auto  w-full text-base text-black rounded-3xl border border-solid bg-stone-50 border-slate-300 max-md:mt-10 overflow-hidden max-h-[60%]">
+        <aside className="flex flex-col h-[80%] max-md:w-full top-0 z-50 sticky overflow-hidden mt-10">
+            <div className="flex flex-col px-10 py-6 mx-auto  w-full text-base text-black rounded-3xl border border-solid bg-stone-50 border-slate-300 max-md:mt-10 overflow-hidden max-h-[60%] pb-16">
                 <div className="flex gap-5 justify-between text-2xl whitespace-nowrap py-5">
                     <h2>Modules</h2>
                     <svg className="object-contain shrink-0 self-start mt-3.5 aspect-[2] w-[30px]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                     </svg>
                 </div>
-                <div className="flex flex-col overflow-y-auto max-h-[calc(100vh-200px)] mt-4">
+                <div className="flex flex-col overflow-y-auto max-h-[calc(100vh-200px)] mt-4 ">
                     {modules.map((module, index) => (
-                        <div key={index} className="flex gap-6 px-20 py-6 mt-3 whitespace-nowrap bg-white rounded-2xl border border-solid border-slate-300">
+                        <div key={index} className="flex gap-6 px-20 py-6 mt-3 whitespace-nowrap bg-white rounded-2xl border border-solid border-slate-300 justify-center items-center">
                             {module.icon}
                             <div className="grow shrink my-auto w-[145px]">{module.name}</div>
                         </div>
